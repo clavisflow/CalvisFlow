@@ -15,12 +15,13 @@
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://clavisflow.net/">
+    <link rel="icon" type="image/png" href="assets/service-icon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="ClavisFlow ホーム">
-        <span class="brand-mark" aria-hidden="true">C</span>
+        <span class="brand-mark" aria-hidden="true"><img src="assets/service-icon.png" alt=""></span>
         <span>ClavisFlow</span>
       </a>
       <nav class="nav" aria-label="主要ナビゲーション">
@@ -183,8 +184,21 @@
             </ul>
           </div>
         </div>
+        <div class="support-note" aria-labelledby="support-note-title">
+          <div class="support-avatar">
+            <img src="assets/profile-icon.png" alt="ClavisFlowのアイコン" width="120" height="120">
+          </div>
+          <div class="support-comment">
+            <h3 id="support-note-title">まずは「ここが気になる」だけでも大丈夫です。</h3>
+            <p>
+              対応するのは、既存システムの調査・改修を長く見てきたエンジニアです。
+              仕様書がない、前任者に聞けない、状況をうまく説明できない場合も、断片的な情報から一緒に整理します。
+            </p>
+          </div>
+        </div>
 
       </section>
+
       <section class="diagnosis" id="diagnosis" aria-labelledby="diagnosis-title">
         <div class="diagnosis-copy">
           <p class="eyebrow">Free Diagnosis</p>
@@ -192,6 +206,18 @@
           <p>
             いくつかの質問に答えると、リスク傾向と相談時に共有しやすい要点をその場でまとめます。
           </p>
+          <div class="diagnosis-guide">
+            <h3>資料共有で、より具体的な診断にも対応します。</h3>
+            <p>
+              ソースコードの一部、テーブル定義書、画面仕様、エラーログなどを共有いただければ、
+              より踏み込んだリスク診断や改善の方向性をテキストで整理してお送りします。
+            </p>
+            <ul>
+              <li>オンライン相談の前に、まず技術的な見解だけ知りたい場合もご活用いただけます。</li>
+              <li>コードの一部だけ、エラー内容だけ、テーブル定義だけといった断片的な情報でも歓迎しています。</li>
+              <li>共有いただいた資料は診断目的のみに使用し、確認後は適切に取り扱います。機密保持が必要な場合は事前にお申し付けください。</li>
+            </ul>
+          </div>
           <div class="result-panel" data-result aria-live="polite">
             <span class="result-label">診断結果</span>
             <strong>未診断</strong>

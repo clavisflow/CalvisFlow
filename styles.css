@@ -72,12 +72,19 @@ textarea {
 
 .brand-mark {
   display: grid;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   place-items: center;
-  border: 1px solid currentColor;
   border-radius: 8px;
-  font-size: 16px;
+  background: #000000;
+  overflow: hidden;
+}
+
+.brand-mark img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
 .nav {
@@ -386,6 +393,65 @@ h3 {
   font-weight: 720;
 }
 
+.support-note {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: clamp(20px, 4vw, 34px);
+  align-items: center;
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #eef4ef;
+  padding: clamp(22px, 4vw, 30px);
+}
+
+.support-avatar {
+  display: grid;
+  width: 120px;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.support-avatar img {
+  display: block;
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+}
+
+.support-comment {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  padding: 20px 22px;
+  box-shadow: 0 12px 36px rgba(17, 23, 22, 0.06);
+}
+
+.support-comment::before {
+  content: "";
+  position: absolute;
+  top: 34px;
+  left: -9px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  background: var(--white);
+  transform: rotate(45deg);
+}
+
+.support-comment h3 {
+  font-size: 22px;
+}
+
+.support-comment p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
 .split {
   display: grid;
   grid-template-columns: minmax(0, 0.84fr) minmax(320px, 1fr);
@@ -420,7 +486,6 @@ h3 {
   border-left: 0;
   transform: rotate(45deg);
 }
-
 .diagnosis {
   display: grid;
   grid-template-columns: minmax(280px, 0.78fr) minmax(320px, 1fr);
@@ -434,6 +499,46 @@ h3 {
   align-self: start;
 }
 
+.diagnosis-guide {
+  margin-top: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 22px;
+}
+
+.diagnosis-guide h3 {
+  font-size: 18px;
+}
+
+.diagnosis-guide p,
+.diagnosis-guide li {
+  color: var(--muted);
+}
+
+.diagnosis-guide ul {
+  display: grid;
+  gap: 9px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.diagnosis-guide li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.diagnosis-guide li::before {
+  content: "";
+  position: absolute;
+  top: 0.78em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--amber);
+}
 .result-panel {
   margin-top: 32px;
   border: 1px solid var(--line);
@@ -579,6 +684,7 @@ h3 {
   }
 
   .hero-metrics,
+  .support-note,
   .capability-grid,
   .skill-panel,
   .intro-grid,
@@ -588,6 +694,23 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+
+  .support-note {
+    justify-items: start;
+  }
+
+  .support-avatar {
+    width: 96px;
+  }
+
+  .support-avatar img {
+    width: 74px;
+    height: 74px;
+  }
+
+  .support-comment::before {
+    display: none;
+  }
   .diagnosis-copy {
     position: static;
   }
