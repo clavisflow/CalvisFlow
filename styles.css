@@ -242,6 +242,7 @@ h3 {
 .section,
 .band,
 .diagnosis {
+  scroll-margin-top: 86px;
   padding: clamp(72px, 10vw, 132px) clamp(18px, 5vw, 70px);
 }
 
@@ -451,6 +452,48 @@ h3 {
 .support-comment p:last-child {
   margin-bottom: 0;
   color: var(--muted);
+}
+
+.pricing {
+  background: var(--white);
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.price-grid article {
+  display: grid;
+  min-height: 230px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfa;
+  padding: 24px;
+  box-shadow: 0 12px 36px rgba(17, 23, 22, 0.06);
+}
+
+.price-grid h3 {
+  font-size: 19px;
+}
+
+.price-grid p {
+  color: var(--muted);
+}
+
+.price-grid strong {
+  align-self: end;
+  color: var(--teal-deep);
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.price-note {
+  max-width: 880px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 14px;
 }
 .split {
   display: grid;
@@ -688,6 +731,7 @@ h3 {
   .capability-grid,
   .skill-panel,
   .intro-grid,
+  .price-grid,
   .flow,
   .split,
   .diagnosis {

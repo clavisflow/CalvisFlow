@@ -1,316 +1,359 @@
 <!doctype html>
 <html lang="ja">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ClavisFlow | レガシーアプリ無料診断</title>
-    <meta
-      name="description"
-      content="ClavisFlowは、古くなった業務アプリのリスク、保守性、改善優先度を無料で診断し、現実的な移行ロードマップづくりを支援します。"
-    >
+    <meta name="description"
+          content="ClavisFlowは、古くなった業務アプリのリスク、保守性、改善優先度を無料で診断し、現実的な移行ロードマップづくりを支援します。">
     <meta property="og:title" content="ClavisFlow | レガシーアプリ無料診断">
-    <meta
-      property="og:description"
-      content="止められない業務システムを、止めずに見直す。無料診断フォームで改善の優先順位を可視化します。"
-    >
+    <meta property="og:description"
+          content="止められない業務システムを、止めずに見直す。無料診断フォームで改善の優先順位を可視化します。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://clavisflow.net/">
     <link rel="icon" type="image/png" href="assets/service-icon.png">
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+</head>
+<body>
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="ClavisFlow ホーム">
-        <span class="brand-mark" aria-hidden="true"><img src="assets/service-icon.png" alt=""></span>
-        <span>ClavisFlow</span>
-      </a>
-      <nav class="nav" aria-label="主要ナビゲーション">
-        <a href="#diagnosis">無料診断</a>
-        <a href="#approach">支援内容</a>
-        <a href="#cases">対象領域</a>
-        <a href="#capabilities">実績・スキル</a>
-      </nav>
-      <a class="header-cta" href="#diagnosis">診断する</a>
+        <a class="brand" href="#top" aria-label="ClavisFlow ホーム">
+            <span class="brand-mark" aria-hidden="true"><img src="assets/service-icon.png" alt=""></span>
+            <span>ClavisFlow</span>
+        </a>
+        <nav class="nav" aria-label="主要ナビゲーション">
+            <a href="#diagnosis">無料診断</a>
+            <a href="#approach">支援内容</a>
+            <a href="#cases">対象範囲</a>
+            <a href="#capabilities">実績・スキル</a>
+            <a href="#pricing">参考価格</a>
+        </nav>
+        <a class="header-cta" href="#diagnosis">診断する</a>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <canvas class="hero-canvas" data-hero-canvas aria-hidden="true"></canvas>
-        <div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Legacy Application Health Check</p>
-          <h1 id="hero-title">止められない業務アプリを、止めずに見直す。</h1>
-          <p class="hero-lead">
-            ClavisFlowは、現場に残り続けたレガシーアプリのリスクと改善優先度を整理し、
-            小さく始められる移行計画へつなげます。
-          </p>
-          <div class="hero-actions" aria-label="主な操作">
-            <a class="button primary" href="#diagnosis">無料診断を始める</a>
-            <a class="button secondary" href="#approach">支援内容を見る</a>
-          </div>
-          <dl class="hero-metrics" aria-label="診断で整理する観点">
+        <section class="hero" aria-labelledby="hero-title">
+            <canvas class="hero-canvas" data-hero-canvas aria-hidden="true"></canvas>
+            <div class="hero-shade" aria-hidden="true"></div>
+            <div class="hero-content">
+                <p class="eyebrow">Legacy Application Health Check</p>
+                <h1 id="hero-title">止められない業務アプリを、止めずに見直す。</h1>
+                <p class="hero-lead">
+                    ClavisFlowは、現場に残り続けたレガシーアプリのリスクと改善優先度を整理し、
+                    小さく始められる移行計画へつなげます。
+                </p>
+                <div class="hero-actions" aria-label="主な操作">
+                    <a class="button primary" href="#diagnosis">無料診断を始める</a>
+                    <a class="button secondary" href="#approach">支援内容を見る</a>
+                </div>
+                <dl class="hero-metrics" aria-label="診断で整理する観点">
+                    <div>
+                        <dt>5分</dt>
+                        <dd>入力目安</dd>
+                    </div>
+                    <div>
+                        <dt>25年</dt>
+                        <dd>保守・改修実績</dd>
+                    </div>
+                    <div>
+                        <dt>無料</dt>
+                        <dd>初回診断</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="section intro" aria-labelledby="intro-title">
+            <div class="section-heading">
+                <p class="eyebrow">Why ClavisFlow</p>
+                <h2 id="intro-title">「古いから作り直す」の前に、<br />まず全体像を掴む。</h2>
+            </div>
+            <div class="intro-grid">
+                <article>
+                    <span class="icon" aria-hidden="true">01</span>
+                    <h3>業務影響を分ける</h3>
+                    <p>止められない機能、後回しにできる機能、属人化している作業を切り分けます。</p>
+                </article>
+                <article>
+                    <span class="icon" aria-hidden="true">02</span>
+                    <h3>技術負債を見える化</h3>
+                    <p>保守期限、認証、データ構造、連携先、開発環境の再現性を点検します。</p>
+                </article>
+                <article>
+                    <span class="icon" aria-hidden="true">03</span>
+                    <h3>次の一手に落とす</h3>
+                    <p>全面刷新だけでなく、分離、置換、API化、自動化など現実的な順番を提案します。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="band" id="approach" aria-labelledby="approach-title">
+            <div class="section-heading">
+                <p class="eyebrow">Approach</p>
+                <h2 id="approach-title">診断から改善計画まで、無理のない粒度で支援します。</h2>
+            </div>
+            <div class="flow">
+                <article>
+                    <span>1</span>
+                    <h3>現状ヒアリング</h3>
+                    <p>利用者、頻度、障害履歴、担当者、外部連携を短時間で把握します。</p>
+                </article>
+                <article>
+                    <span>2</span>
+                    <h3>リスク判定</h3>
+                    <p>保守不能化、セキュリティ、運用品質、データ退避難度を評価します。</p>
+                </article>
+                <article>
+                    <span>3</span>
+                    <h3>改善ロードマップ</h3>
+                    <p>費用対効果と業務停止リスクを見ながら、着手順と検証方法を整理します。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section split" id="cases" aria-labelledby="cases-title">
             <div>
-              <dt>5分</dt>
-              <dd>入力目安</dd>
+                <p class="eyebrow">Use Cases</p>
+                <h2 id="cases-title">こんな状態のアプリに向いています。</h2>
+                <p class="section-copy">
+                    Windowsデスクトップ、Excel/VBA、Access、古いWebシステム、担当者しか触れない社内ツールなど、
+                    動いてはいるものの、改修や引き継ぎに不安があるアプリが対象です。
+                </p>
             </div>
-            <div>
-              <dt>25年</dt>
-              <dd>保守・改修実績</dd>
-            </div>
-            <div>
-              <dt>無料</dt>
-              <dd>初回診断</dd>
-            </div>
-          </dl>
-        </div>
-      </section>
-
-      <section class="section intro" aria-labelledby="intro-title">
-        <div class="section-heading">
-          <p class="eyebrow">Why ClavisFlow</p>
-          <h2 id="intro-title">「古いから作り直す」の前に、<br/>まず全体像を掴む。</h2>
-        </div>
-        <div class="intro-grid">
-          <article>
-            <span class="icon" aria-hidden="true">01</span>
-            <h3>業務影響を分ける</h3>
-            <p>止められない機能、後回しにできる機能、属人化している作業を切り分けます。</p>
-          </article>
-          <article>
-            <span class="icon" aria-hidden="true">02</span>
-            <h3>技術負債を見える化</h3>
-            <p>保守期限、認証、データ構造、連携先、開発環境の再現性を点検します。</p>
-          </article>
-          <article>
-            <span class="icon" aria-hidden="true">03</span>
-            <h3>次の一手に落とす</h3>
-            <p>全面刷新だけでなく、分離、置換、API化、自動化など現実的な順番を提案します。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="band" id="approach" aria-labelledby="approach-title">
-        <div class="section-heading">
-          <p class="eyebrow">Approach</p>
-          <h2 id="approach-title">診断から改善計画まで、無理のない粒度で支援します。</h2>
-        </div>
-        <div class="flow">
-          <article>
-            <span>1</span>
-            <h3>現状ヒアリング</h3>
-            <p>利用者、頻度、障害履歴、担当者、外部連携を短時間で把握します。</p>
-          </article>
-          <article>
-            <span>2</span>
-            <h3>リスク判定</h3>
-            <p>保守不能化、セキュリティ、運用品質、データ退避難度を評価します。</p>
-          </article>
-          <article>
-            <span>3</span>
-            <h3>改善ロードマップ</h3>
-            <p>費用対効果と業務停止リスクを見ながら、着手順と検証方法を整理します。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section split" id="cases" aria-labelledby="cases-title">
-        <div>
-          <p class="eyebrow">Use Cases</p>
-          <h2 id="cases-title">こんな状態のアプリに向いています。</h2>
-          <p class="section-copy">
-            Windowsデスクトップ、Excel/VBA、Access、古いWebシステム、担当者しか触れない社内ツールなど、
-            「今は動いているが、次の変更が怖い」状態を扱います。
-          </p>
-        </div>
-        <ul class="check-list">
-          <li>担当者の退職や異動で仕様が追えなくなっている</li>
-          <li>OS、ライブラリ、サーバーの保守期限が迫っている</li>
-          <li>手作業や二重入力が多く、ミスの原因になっている</li>
-          <li>障害時に復旧手順やデータの正しさを説明しづらい</li>
-          <li>作り直したいが、何から始めるべきか決めきれない</li>
-        </ul>
-      </section>
-
-
-      <section class="section capabilities" id="capabilities" aria-labelledby="capabilities-title">
-        <div class="section-heading">
-          <p class="eyebrow">Experience & Skills</p>
-          <h2 id="capabilities-title">不具合調査からリプレースまで、<br/>既存システムの困りごとに対応します。</h2>
-          <p class="section-copy">
-            長年運用されてきたシステムの調査・改修を中心に、ログ解析、SQL、コード解析、仕様整理、移行設計まで幅広く支援します。
-          </p>
-        </div>
-
-        <div class="capability-grid">
-          <article>
-            <span class="icon" aria-hidden="true">01</span>
-            <h3>対応可能なご依頼</h3>
-            <ul class="compact-list">
-              <li>不具合調査・原因特定</li>
-              <li>既存システムの改修・機能追加・最適化</li>
-              <li>レガシーシステムの引き継ぎ・リプレース</li>
-              <li>コード解析・仕様把握・ドキュメント化</li>
-              <li>コードレビュー・技術相談</li>
-              <li>DB設計・SQLパフォーマンス改善</li>
+            <ul class="check-list">
+                <li>担当者の退職や異動で仕様が追えない</li>
+                <li>OS、ライブラリ、サーバーの保守期限が迫っている</li>
+                <li>どの処理がどのファイルやデータを作っているのか追えない</li>
+                <li>使われている技術や構成が分からないまま運用している</li>
+                <li>ソースコードや設計資料の所在が分からない</li>
+                <li>特定のPCでしか動かない</li>
+                <li>手作業や二重入力が多く、ミスの原因になっている</li>
+                <li>データ量の増加により、処理の遅延やエラーが目立ってきた</li>
+                <li>作り直したいが、何から始めるべきか決めきれない</li>
             </ul>
-          </article>
+        </section>
 
-          <article>
-            <span class="icon" aria-hidden="true">02</span>
-            <h3>実績例</h3>
-            <ul class="compact-list">
-              <li>ASP.NET業務システムの不具合調査・改修</li>
-              <li>VB6システムの段階的リプレース</li>
-              <li>Classic ASPからBlazorへの再構築</li>
-              <li>SQLチューニングによる処理時間50%以上短縮</li>
-            </ul>
-          </article>
-        </div>
 
-        <div class="skill-panel">
-          <div>
-            <h3>技術スタック</h3>
-            <div class="tag-list" aria-label="技術スタック">
-              <span>C#</span><span>VB.NET</span><span>ASP.NET Core</span><span>Blazor</span><span>Rails</span><span>Angular</span><span>Next.js</span><span>WinForms</span><span>WPF</span><span>Excel VBA</span><span>Access VBA</span><span>VB6</span><span>SQL Server</span><span>PostgreSQL</span><span>AWS</span><span>Supabase</span><span>GitHub Copilot</span><span>VS Code AIエージェント</span>
+        <section class="section capabilities" id="capabilities" aria-labelledby="capabilities-title">
+            <div class="section-heading">
+                <p class="eyebrow">Experience & Skills</p>
+                <h2 id="capabilities-title">不具合調査からリプレースまで、<br />既存システムの困りごとに対応します。</h2>
+                <p class="section-copy">
+                    長年運用されてきたシステムの調査・改修を中心に、ログ解析、SQL、コード解析、仕様整理、移行設計まで幅広く支援します。
+                </p>
             </div>
-          </div>
-          <div>
-            <h3>保有資格</h3>
-            <ul class="credential-list">
-              <li>IPA プロジェクトマネージャ試験</li>
-              <li>IPA 基本情報技術者試験</li>
-              <li>AWS 認定 ソリューションアーキテクト - アソシエイト</li>
-              <li>ORACLE MASTER Silver</li>
-            </ul>
-          </div>
-        </div>
-        <div class="support-note" aria-labelledby="support-note-title">
-          <div class="support-avatar">
-            <img src="assets/profile-icon.png" alt="ClavisFlowのアイコン" width="120" height="120">
-          </div>
-          <div class="support-comment">
-            <h3 id="support-note-title">まずは「ここが気になる」だけでも大丈夫です。</h3>
-            <p>
-              対応するのは、既存システムの調査・改修を長く見てきたエンジニアです。
-              仕様書がない、前任者に聞けない、状況をうまく説明できない場合も、断片的な情報から一緒に整理します。
+
+            <div class="capability-grid">
+                <article>
+                    <span class="icon" aria-hidden="true">01</span>
+                    <h3>対応可能なご依頼</h3>
+                    <ul class="compact-list">
+                        <li>不具合調査・原因特定</li>
+                        <li>既存システムの改修・機能追加・最適化</li>
+                        <li>レガシーシステムの引き継ぎ・リプレース</li>
+                        <li>コード解析・仕様把握・ドキュメント化</li>
+                        <li>コードレビュー・技術相談・ベンダー見積レビュー</li>
+                        <li>DB設計・SQLパフォーマンス改善</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <span class="icon" aria-hidden="true">02</span>
+                    <h3>実績例</h3>
+                    <ul class="compact-list">
+                        <li>ASP.NET業務システムの不具合調査・改修</li>
+                        <li>Excel VBA・マクロの仕様整理と改修方針の提案</li>
+                        <li>Access運用の部分見直しによる延命提案</li>
+                        <li>サーバー入れ替えに伴う影響調査と対象アプリの整理</li>
+                        <li>VB6システムの段階的リプレース</li>
+                        <li>Classic ASPからBlazorへの再構築</li>
+                        <li>SQLチューニングによる処理時間50%以上短縮</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="skill-panel">
+                <div>
+                    <h3>技術スタック</h3>
+                    <div class="tag-list" aria-label="技術スタック">
+                        <span>C#</span><span>VB.NET</span><span>ASP.NET Core</span><span>Blazor</span><span>Rails</span><span>Angular</span><span>Next.js</span>
+                        <span>WinForms</span><span>WPF</span><span>Excel VBA</span><span>Access VBA</span><span>VB6</span>
+                        <span>SQL Server</span><span>PostgreSQL</span><span>AWS</span><span>Azure</span><span>Supabase</span>
+                        <span>GitHub Copilot</span><span>CODEX</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>保有資格</h3>
+                    <ul class="credential-list">
+                        <li>IPA プロジェクトマネージャ試験</li>
+                        <li>IPA 基本情報技術者試験</li>
+                        <li>AWS 認定 ソリューションアーキテクト - アソシエイト</li>
+                        <li>ORACLE MASTER Silver</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="support-note" aria-labelledby="support-note-title">
+                <div class="support-avatar">
+                    <img src="assets/profile-icon.png" alt="ClavisFlowのアイコン" width="120" height="120">
+                </div>
+                <div class="support-comment">
+                    <h3 id="support-note-title">まずは「ここが気になる」だけでも大丈夫です。</h3>
+                    <p>
+                        対応するのは、既存システムの調査・改修を長く見てきたエンジニアです。
+                        仕様書がない、前任者に聞けない、状況をうまく説明できない場合も、断片的な情報から一緒に整理します。
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="diagnosis" id="diagnosis" aria-labelledby="diagnosis-title">
+            <div class="diagnosis-copy">
+                <p class="eyebrow">Free Diagnosis</p>
+                <h2 id="diagnosis-title">無料レガシーアプリ診断</h2>
+                <p>
+                    いくつかの質問に答えると、リスク傾向と相談時に共有しやすい要点をその場でまとめます。
+                    相談メールをいただいた場合も、初回の返信までは無料で対応します。
+                </p>
+                <div class="diagnosis-guide">
+                    <h3>資料共有で、より具体的な診断にも対応します。</h3>
+                    <p>
+                        ソースコードの一部、テーブル定義書、画面仕様、エラーログなどを共有いただければ、
+                        より踏み込んだリスク診断や改善の方向性をテキストで整理してお送りします。
+                    </p>
+                    <ul>
+                        <li>オンライン相談の前に、まず技術的な見解だけ知りたい場合もご活用いただけます。</li>
+                        <li>コードの一部だけ、エラー内容だけ、テーブル定義だけといった断片的な情報でも歓迎しています。</li>
+                        <li>共有いただいた資料は診断目的のみに使用し、確認後は適切に取り扱います。機密保持が必要な場合は事前にお申し付けください。</li>
+                    </ul>
+                </div>
+                <div class="result-panel" data-result aria-live="polite">
+                    <span class="result-label">診断結果</span>
+                    <strong>未診断</strong>
+                    <p>フォーム入力後、ここに優先度と次の一手が表示されます。</p>
+                </div>
+            </div>
+
+            <form class="diagnosis-form" data-diagnosis-form>
+                <label>
+                    <span>アプリの種類</span>
+                    <select name="appType" required>
+                        <option value="">選択してください</option>
+                        <option value="desktop">Windowsデスクトップアプリ</option>
+                        <option value="excel">Excel / VBA / Access</option>
+                        <option value="web">古いWebシステム</option>
+                        <option value="batch">バッチ / 連携ツール</option>
+                        <option value="other">その他の社内ツール</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span>業務への影響度</span>
+                    <select name="impact" required>
+                        <option value="">選択してください</option>
+                        <option value="3">止まると当日業務に大きな影響がある</option>
+                        <option value="2">数日以内に復旧できないと困る</option>
+                        <option value="1">代替手段はあるが非効率になる</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span>保守できる人</span>
+                    <select name="maintainer" required>
+                        <option value="">選択してください</option>
+                        <option value="3">社内外を含めてほぼ一人に依存している</option>
+                        <option value="2">複数人いるが仕様の一部が不明</option>
+                        <option value="1">引き継ぎ資料や開発環境がある</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span>最終更新からの期間</span>
+                    <select name="age" required>
+                        <option value="">選択してください</option>
+                        <option value="3">5年以上ほぼ触っていない</option>
+                        <option value="2">2年以上大きな変更がない</option>
+                        <option value="1">直近でも更新している</option>
+                    </select>
+                </label>
+
+                <fieldset>
+                    <legend>気になっていること</legend>
+                    <label class="checkbox">
+                        <input type="checkbox" name="concerns" value="security" data-risk="1">
+                        <span>セキュリティや権限管理が古い</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" name="concerns" value="manual" data-risk="1">
+                        <span>手作業、二重入力、Excel転記が多い</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" name="concerns" value="data" data-risk="1">
+                        <span>データ移行やバックアップに不安がある</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" name="concerns" value="vendor" data-risk="1">
+                        <span>開発会社や担当者に連絡しづらい</span>
+                    </label>
+                </fieldset>
+
+                <label>
+                    <span>相談したい内容</span>
+                    <textarea name="message"
+                              rows="4"
+                              placeholder="例: Accessで作った受注管理をWeb化したい。担当者が退職予定で、仕様が一部不明。"></textarea>
+                </label>
+
+                <button class="button primary form-submit" type="submit">診断結果を表示</button>
+                <a class="mail-link" data-mail-link href="mailto:hello@clavisflow.net">メールで相談する</a>
+            </form>
+        </section>
+
+        <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+            <div class="section-heading">
+                <p class="eyebrow">Price Guide</p>
+                <h2 id="pricing-title">参考価格</h2>
+                <p class="section-copy">
+                    まずは無料診断から。以降のご相談・作業は下記が目安です。
+                </p>
+            </div>
+
+            <div class="price-grid">
+                <article>
+                    <h3>無料診断</h3>
+                    <p>いただいた内容から確認すべきポイントを整理し、今後の対応方針を提案します。</p>
+                    <strong>無料</strong>
+                </article>
+                <article>
+                    <h3>追加相談</h3>
+                    <p>オンラインで資料や画面を見ながら、対応範囲と進め方を確認します。</p>
+                    <strong>4,000円〜</strong>
+                </article>
+                <article>
+                    <h3>現状整理</h3>
+                    <p>仕様・課題をドキュメント化して、延命・改修・再構築方針を整理します。</p>
+                    <strong>32,000円〜</strong>
+                </article>
+                <article>
+                    <h3>軽微な改修</h3>
+                    <p>小規模なエラー修正や改修作業・パフォーマンス改善に対応します。</p>
+                    <strong>20,000円〜</strong>
+                </article>
+            </div>
+
+            <p class="price-note">
+                表示価格は税込の目安です。対象範囲が広い場合や作業規模が大きい場合は、個別見積となります。
             </p>
-          </div>
-        </div>
-
-      </section>
-
-      <section class="diagnosis" id="diagnosis" aria-labelledby="diagnosis-title">
-        <div class="diagnosis-copy">
-          <p class="eyebrow">Free Diagnosis</p>
-          <h2 id="diagnosis-title">無料レガシーアプリ診断</h2>
-          <p>
-            いくつかの質問に答えると、リスク傾向と相談時に共有しやすい要点をその場でまとめます。
-          </p>
-          <div class="diagnosis-guide">
-            <h3>資料共有で、より具体的な診断にも対応します。</h3>
-            <p>
-              ソースコードの一部、テーブル定義書、画面仕様、エラーログなどを共有いただければ、
-              より踏み込んだリスク診断や改善の方向性をテキストで整理してお送りします。
-            </p>
-            <ul>
-              <li>オンライン相談の前に、まず技術的な見解だけ知りたい場合もご活用いただけます。</li>
-              <li>コードの一部だけ、エラー内容だけ、テーブル定義だけといった断片的な情報でも歓迎しています。</li>
-              <li>共有いただいた資料は診断目的のみに使用し、確認後は適切に取り扱います。機密保持が必要な場合は事前にお申し付けください。</li>
-            </ul>
-          </div>
-          <div class="result-panel" data-result aria-live="polite">
-            <span class="result-label">診断結果</span>
-            <strong>未診断</strong>
-            <p>フォーム入力後、ここに優先度と次の一手が表示されます。</p>
-          </div>
-        </div>
-
-        <form class="diagnosis-form" data-diagnosis-form>
-          <label>
-            <span>アプリの種類</span>
-            <select name="appType" required>
-              <option value="">選択してください</option>
-              <option value="desktop">Windowsデスクトップアプリ</option>
-              <option value="excel">Excel / VBA / Access</option>
-              <option value="web">古いWebシステム</option>
-              <option value="batch">バッチ / 連携ツール</option>
-              <option value="other">その他の社内ツール</option>
-            </select>
-          </label>
-
-          <label>
-            <span>業務への影響度</span>
-            <select name="impact" required>
-              <option value="">選択してください</option>
-              <option value="3">止まると当日業務に大きな影響がある</option>
-              <option value="2">数日以内に復旧できないと困る</option>
-              <option value="1">代替手段はあるが非効率になる</option>
-            </select>
-          </label>
-
-          <label>
-            <span>保守できる人</span>
-            <select name="maintainer" required>
-              <option value="">選択してください</option>
-              <option value="3">社内外を含めてほぼ一人に依存している</option>
-              <option value="2">複数人いるが仕様の一部が不明</option>
-              <option value="1">引き継ぎ資料や開発環境がある</option>
-            </select>
-          </label>
-
-          <label>
-            <span>最終更新からの期間</span>
-            <select name="age" required>
-              <option value="">選択してください</option>
-              <option value="3">5年以上ほぼ触っていない</option>
-              <option value="2">2年以上大きな変更がない</option>
-              <option value="1">直近でも更新している</option>
-            </select>
-          </label>
-
-          <fieldset>
-            <legend>気になっていること</legend>
-            <label class="checkbox">
-              <input type="checkbox" name="concerns" value="security" data-risk="1">
-              <span>セキュリティや権限管理が古い</span>
-            </label>
-            <label class="checkbox">
-              <input type="checkbox" name="concerns" value="manual" data-risk="1">
-              <span>手作業、二重入力、Excel転記が多い</span>
-            </label>
-            <label class="checkbox">
-              <input type="checkbox" name="concerns" value="data" data-risk="1">
-              <span>データ移行やバックアップに不安がある</span>
-            </label>
-            <label class="checkbox">
-              <input type="checkbox" name="concerns" value="vendor" data-risk="1">
-              <span>開発会社や担当者に連絡しづらい</span>
-            </label>
-          </fieldset>
-
-          <label>
-            <span>相談したい内容</span>
-            <textarea
-              name="message"
-              rows="4"
-              placeholder="例: Accessで作った受注管理をWeb化したい。担当者が退職予定で、仕様が一部不明。"
-            ></textarea>
-          </label>
-
-          <button class="button primary form-submit" type="submit">診断結果を表示</button>
-          <a class="mail-link" data-mail-link href="mailto:hello@clavisflow.net">メールで相談する</a>
-        </form>
-      </section>
+        </section>
     </main>
 
     <footer class="site-footer">
-      <div>
-        <strong>ClavisFlow</strong>
-        <p>Legacy application diagnosis and modernization planning.</p>
-      </div>
-      <a href="mailto:hello@clavisflow.net">hello@clavisflow.net</a>
+        <div>
+            <strong>ClavisFlow</strong>
+            <p>Legacy application diagnosis and modernization planning.</p>
+        </div>
+        <a href="mailto:hello@clavisflow.net">hello@clavisflow.net</a>
     </footer>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
