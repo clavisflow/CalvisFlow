@@ -762,15 +762,17 @@ h3 {
 
 @media (max-width: 560px) {
   .site-header {
-    padding: 14px 16px;
+    gap: 12px;
+    padding: 14px 12px;
   }
 
-  .brand span:last-child {
-    display: none;
+  .brand {
+    gap: 8px;
+    font-size: 15px;
   }
 
   .header-cta {
-    padding: 8px 12px;
+    padding: 8px 10px;
   }
 
   .hero-content {
