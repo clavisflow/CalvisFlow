@@ -495,6 +495,35 @@ h3 {
   color: var(--muted);
   font-size: 14px;
 }
+.free-apps {
+  background: #eef4ef;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.app-card {
+  display: grid;
+  min-height: 300px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  padding: clamp(24px, 4vw, 34px);
+  box-shadow: 0 12px 36px rgba(17, 23, 22, 0.06);
+}
+
+.app-card p {
+  color: var(--muted);
+}
+
+.app-link {
+  align-self: end;
+  justify-self: start;
+  margin-top: 18px;
+}
 .split {
   display: grid;
   grid-template-columns: minmax(0, 0.84fr) minmax(320px, 1fr);
@@ -730,6 +759,7 @@ h3 {
   .support-note,
   .capability-grid,
   .skill-panel,
+  .app-grid,
   .intro-grid,
   .price-grid,
   .flow,
