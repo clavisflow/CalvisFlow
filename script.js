@@ -4,9 +4,21 @@
   const result = document.querySelector("[data-result]");
   const mailLink = document.querySelector("[data-mail-link]");
   const canvas = document.querySelector("[data-hero-canvas]");
+  const menuToggle = document.querySelector("[data-menu-toggle]");
+  const siteNav = document.querySelector("[data-site-nav]");
 
   function updateHeader() {
     header.classList.toggle("is-scrolled", window.scrollY > 18);
+  }
+
+  function setMenuOpen(isOpen) {
+    header.classList.toggle("is-menu-open", isOpen);
+    menuToggle?.setAttribute("aria-expanded", String(isOpen));
+    menuToggle?.setAttribute("aria-label", isOpen ? "メニューを閉じる" : "メニューを開く");
+  }
+
+  function toggleMenu() {
+    setMenuOpen(!header.classList.contains("is-menu-open"));
   }
 
   function drawHero() {
@@ -178,6 +190,17 @@
 
   window.addEventListener("scroll", updateHeader, { passive: true });
   window.addEventListener("resize", drawHero);
+  menuToggle?.addEventListener("click", toggleMenu);
+  siteNav?.addEventListener("click", (event) => {
+    if (event.target.closest("a")) {
+      setMenuOpen(false);
+    }
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setMenuOpen(false);
+    }
+  });
   form?.addEventListener("submit", handleDiagnosis);
   updateHeader();
   drawHero();
